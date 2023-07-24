@@ -3,9 +3,9 @@
     const html = document.querySelector("html");
 
     function setAngle() {
-        if (window.innerWidth < 1400 && window.innerWidth >= 768) {
+        if (window.innerWidth < 1400 && window.innerWidth >= 1024) {
             html.style.setProperty("--angle", `${window.innerWidth / 43.75}deg`);
-        } else if (window.innerWidth < 768) {
+        } else if (window.innerWidth < 1024) {
             html.style.setProperty("--angle", `${window.innerWidth / 160}deg`);
         } else if (window.innerWidth >= 1400) {
             html.style.setProperty("--angle", `32deg`);
